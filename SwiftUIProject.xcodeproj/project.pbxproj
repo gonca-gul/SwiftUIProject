@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61599EE2B70F9500008F007 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61599ED2B70F9500008F007 /* CustomVideoPlayer.swift */; };
+		E61687A22B6CDE4D000A709C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61687A12B6CDE4D000A709C /* FeedCell.swift */; };
+		E61687A52B70D20F000A709C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61687A42B70D20F000A709C /* FeedViewModel.swift */; };
 		E6D2C0AD2B679BB200410016 /* SwiftUIProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0AC2B679BB200410016 /* SwiftUIProjectApp.swift */; };
 		E6D2C0AF2B679BB200410016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0AE2B679BB200410016 /* ContentView.swift */; };
 		E6D2C0B12B679BB300410016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D2C0B02B679BB300410016 /* Assets.xcassets */; };
@@ -14,6 +17,13 @@
 		E6D2C0BE2B679BB300410016 /* SwiftUIProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0BD2B679BB300410016 /* SwiftUIProjectTests.swift */; };
 		E6D2C0C82B679BB300410016 /* SwiftUIProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0C72B679BB300410016 /* SwiftUIProjectUITests.swift */; };
 		E6D2C0CA2B679BB300410016 /* SwiftUIProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0C92B679BB300410016 /* SwiftUIProjectUITestsLaunchTests.swift */; };
+		E6D2C0D92B68E23100410016 /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0D82B68E23100410016 /* OnBoardingPage.swift */; };
+		E6D2C0DB2B6927C100410016 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0DA2B6927C100410016 /* LoginPage.swift */; };
+		E6D2C0DE2B69298500410016 /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0DD2B69298500410016 /* LoginPageModel.swift */; };
+		E6D2C0E02B6930B500410016 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0DF2B6930B500410016 /* CustomCorners.swift */; };
+		E6D2C0E22B6B851600410016 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0E12B6B851600410016 /* HomePage.swift */; };
+		E6D2C0E72B6BBC2B00410016 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0E62B6BBC2B00410016 /* Home.swift */; };
+		E6E0127F2B70D6CD00FC4607 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0127E2B70D6CD00FC4607 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E61599ED2B70F9500008F007 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		E61687A12B6CDE4D000A709C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		E61687A42B70D20F000A709C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		E6D2C0A92B679BB200410016 /* SwiftUIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D2C0AC2B679BB200410016 /* SwiftUIProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProjectApp.swift; sourceTree = "<group>"; };
 		E6D2C0AE2B679BB200410016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +57,13 @@
 		E6D2C0C32B679BB300410016 /* SwiftUIProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D2C0C72B679BB300410016 /* SwiftUIProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProjectUITests.swift; sourceTree = "<group>"; };
 		E6D2C0C92B679BB300410016 /* SwiftUIProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6D2C0D82B68E23100410016 /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		E6D2C0DA2B6927C100410016 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		E6D2C0DD2B69298500410016 /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
+		E6D2C0DF2B6930B500410016 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		E6D2C0E12B6B851600410016 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		E6D2C0E62B6BBC2B00410016 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E6E0127E2B70D6CD00FC4607 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E61599EC2B70F93C0008F007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E61599ED2B70F9500008F007 /* CustomVideoPlayer.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E6D2C0A02B679BB200410016 = {
 			isa = PBXGroup;
 			children = (
+				E6D2C0D62B68E1C700410016 /* Shared */,
 				E6D2C0AB2B679BB200410016 /* SwiftUIProject */,
 				E6D2C0BC2B679BB300410016 /* SwiftUIProjectTests */,
 				E6D2C0C62B679BB300410016 /* SwiftUIProjectUITests */,
@@ -125,6 +154,47 @@
 				E6D2C0C92B679BB300410016 /* SwiftUIProjectUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIProjectUITests;
+			sourceTree = "<group>";
+		};
+		E6D2C0D62B68E1C700410016 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E61599EC2B70F93C0008F007 /* Components */,
+				E6D2C0DC2B69296F00410016 /* ViewModel */,
+				E6D2C0D72B68E1D700410016 /* View */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E6D2C0D72B68E1D700410016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2C0E52B6BBC1700410016 /* TabViews */,
+				E6D2C0D82B68E23100410016 /* OnBoardingPage.swift */,
+				E6D2C0DA2B6927C100410016 /* LoginPage.swift */,
+				E6D2C0DF2B6930B500410016 /* CustomCorners.swift */,
+				E6D2C0E12B6B851600410016 /* HomePage.swift */,
+				E61687A12B6CDE4D000A709C /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6D2C0DC2B69296F00410016 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E61687A42B70D20F000A709C /* FeedViewModel.swift */,
+				E6D2C0DD2B69298500410016 /* LoginPageModel.swift */,
+				E6E0127E2B70D6CD00FC4607 /* Post.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E6D2C0E52B6BBC1700410016 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2C0E62B6BBC2B00410016 /* Home.swift */,
+			);
+			path = TabViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61687A52B70D20F000A709C /* FeedViewModel.swift in Sources */,
+				E6E0127F2B70D6CD00FC4607 /* Post.swift in Sources */,
+				E6D2C0DB2B6927C100410016 /* LoginPage.swift in Sources */,
+				E6D2C0E02B6930B500410016 /* CustomCorners.swift in Sources */,
+				E6D2C0DE2B69298500410016 /* LoginPageModel.swift in Sources */,
+				E61599EE2B70F9500008F007 /* CustomVideoPlayer.swift in Sources */,
 				E6D2C0AF2B679BB200410016 /* ContentView.swift in Sources */,
+				E6D2C0D92B68E23100410016 /* OnBoardingPage.swift in Sources */,
+				E6D2C0E22B6B851600410016 /* HomePage.swift in Sources */,
+				E6D2C0E72B6BBC2B00410016 /* Home.swift in Sources */,
 				E6D2C0AD2B679BB200410016 /* SwiftUIProjectApp.swift in Sources */,
+				E61687A22B6CDE4D000A709C /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

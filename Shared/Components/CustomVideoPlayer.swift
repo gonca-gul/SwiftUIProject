@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import AVKit
 
-struct CustomVideoPlayer: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CustomVideoPlayer: UIViewControllerRepresentable{
+    var player: AVPlayer
+    
+    func makeUIViewController(context: Context) -> UIViewController {
+        let controller = AVPlayerViewController()
+        controller.player = player
+        controller.showsPlaybackControls = false
+        controller.exitsFullScreenWhenPlaybackEnds = true
+        controller.allowsPictureInPicturePlayback = true
+        controller.videoGravity = .resizeAspectFill
+
+        return controller
     }
-}
-
-#Preview {
-    CustomVideoPlayer()
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        
+    }
 }

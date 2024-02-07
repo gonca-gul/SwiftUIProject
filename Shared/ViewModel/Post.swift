@@ -5,14 +5,13 @@
 //  Created by Gonca Gül on 5.02.2024.
 //
 
-import SwiftUI
+import Foundation
 
-struct Post: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Post()
+struct Post: Identifiable, Codable {
+    let id: String
+    let videoUrl:String
+    let userName: String
+    let description: String
+    let likeNumber: String
+    let commentNumber: String
 }
