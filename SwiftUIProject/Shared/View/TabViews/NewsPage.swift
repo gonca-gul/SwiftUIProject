@@ -105,6 +105,7 @@ struct News: View {
                            }.padding(.horizontal, 24)
                               
                        }.padding()
+                           .padding(.bottom,12)
                        
                }
                Spacer()
@@ -137,14 +138,10 @@ struct News: View {
                                Image("image8")
                                    .resizable()
                                    .cornerRadius(5)
-                                   .padding(.top)
                                }
-                             
-                                
                            }.padding()
                                Divider()
                                    .background(Color.white)
-                                   
                                HStack(spacing:6){
                                    ZStack{
                                        Rectangle()
@@ -172,7 +169,8 @@ struct News: View {
                                    Image("bookmark2")
                                        .resizable()
                                        .frame(width: 24,height: 24)
-                               }.padding()
+                               }.padding(.horizontal)
+                               .padding()
                        }
                        }
                .background(Color(hex:"ffffff"))
@@ -381,7 +379,36 @@ struct News: View {
                .padding()
 
                }
+               ZStack {
+                   HStack(alignment: .center, spacing: 13) {
+                       Image("audioImage")
+                       Text("Live TV")
+                           .font(Font.custom("SFProText-Semibold", size: 16))
+                           .multilineTextAlignment(.center)
+                           .foregroundColor(.black)
+                           
+                       Spacer()
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                           Image("speakerSlash")
+                           
+                       })
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                           Image("pause")
+                           
+                       })
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                           Image("expandWide")
+                           
+                       })
+                   }.padding(.trailing,9)
+                   .padding(.horizontal,3)
+                   .frame(maxWidth: 360, maxHeight: 64)
+                   .background(Color.white)
+                   .padding(.top,-10)
+                   .padding(.bottom,27)
+               }
 
+                  
            }.background(Color(hex:"#EFEFF4"))
        }
    }
