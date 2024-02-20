@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
-    @State var currentTab = Tab .Home
+    @State var currentTab = Tab .News
     init(){
         UITabBar.appearance().isHidden = true
     }
@@ -34,7 +34,6 @@ struct HomePage: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 24,height: 24)
                                     .foregroundColor(currentTab == tab ? (Color(hex:"#007BA7")): (Color(red: 0.41, green: 0.41, blue: 0.41)))
-                            
                             Text(tab.rawValue)
                                 .font(.system(size: 10)) // İsim font boyutunu ayarla
                                 .foregroundColor(currentTab == tab ? (Color(hex:"#007BA7")): (Color(red: 0.41, green: 0.41, blue: 0.41)))

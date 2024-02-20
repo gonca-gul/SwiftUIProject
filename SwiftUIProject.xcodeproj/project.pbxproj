@@ -10,7 +10,12 @@
 		E61599EE2B70F9500008F007 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61599ED2B70F9500008F007 /* CustomVideoPlayer.swift */; };
 		E61687A22B6CDE4D000A709C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61687A12B6CDE4D000A709C /* FeedCell.swift */; };
 		E61687A52B70D20F000A709C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61687A42B70D20F000A709C /* FeedViewModel.swift */; };
+		E61B86452B7B8347001C8CA2 /* VideoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B86442B7B8347001C8CA2 /* VideoPlayerModel.swift */; };
 		E69752D92B74EB2E00D40B0B /* NewsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69752D82B74EB2E00D40B0B /* NewsPage.swift */; };
+		E69752DF2B7B57E900D40B0B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69752DE2B7B57E900D40B0B /* Video.swift */; };
+		E69752E12B7B5C6600D40B0B /* BottomVideoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69752E02B7B5C6600D40B0B /* BottomVideoComponent.swift */; };
+		E69752E32B7B64E700D40B0B /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69752E22B7B64E700D40B0B /* MiniPlayer.swift */; };
+		E69752E52B7B654D00D40B0B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69752E42B7B654D00D40B0B /* VideoPlayerView.swift */; };
 		E6D2C0AD2B679BB200410016 /* SwiftUIProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0AC2B679BB200410016 /* SwiftUIProjectApp.swift */; };
 		E6D2C0AF2B679BB200410016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2C0AE2B679BB200410016 /* ContentView.swift */; };
 		E6D2C0B12B679BB300410016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D2C0B02B679BB300410016 /* Assets.xcassets */; };
@@ -48,7 +53,12 @@
 		E61599ED2B70F9500008F007 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		E61687A12B6CDE4D000A709C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		E61687A42B70D20F000A709C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		E61B86442B7B8347001C8CA2 /* VideoPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerModel.swift; sourceTree = "<group>"; };
 		E69752D82B74EB2E00D40B0B /* NewsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPage.swift; sourceTree = "<group>"; };
+		E69752DE2B7B57E900D40B0B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		E69752E02B7B5C6600D40B0B /* BottomVideoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomVideoComponent.swift; sourceTree = "<group>"; };
+		E69752E22B7B64E700D40B0B /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
+		E69752E42B7B654D00D40B0B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		E6D2C0A92B679BB200410016 /* SwiftUIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D2C0AC2B679BB200410016 /* SwiftUIProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProjectApp.swift; sourceTree = "<group>"; };
 		E6D2C0AE2B679BB200410016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				E61599ED2B70F9500008F007 /* CustomVideoPlayer.swift */,
+				E69752E02B7B5C6600D40B0B /* BottomVideoComponent.swift */,
+				E69752E22B7B64E700D40B0B /* MiniPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -107,6 +119,14 @@
 				E6D2C0B02B679BB300410016 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E69752DD2B7B57D200D40B0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E69752DE2B7B57E900D40B0B /* Video.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E6D2C0A02B679BB200410016 = {
@@ -169,6 +189,7 @@
 		E6D2C0D62B68E1C700410016 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E69752DD2B7B57D200D40B0B /* Model */,
 				E61599EC2B70F93C0008F007 /* Components */,
 				E6D2C0DC2B69296F00410016 /* ViewModel */,
 				E6D2C0D72B68E1D700410016 /* View */,
@@ -185,6 +206,7 @@
 				E6D2C0DF2B6930B500410016 /* CustomCorners.swift */,
 				E6D2C0E12B6B851600410016 /* HomePage.swift */,
 				E61687A12B6CDE4D000A709C /* FeedCell.swift */,
+				E69752E42B7B654D00D40B0B /* VideoPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +217,7 @@
 				E61687A42B70D20F000A709C /* FeedViewModel.swift */,
 				E6D2C0DD2B69298500410016 /* LoginPageModel.swift */,
 				E6E0127E2B70D6CD00FC4607 /* Post.swift */,
+				E61B86442B7B8347001C8CA2 /* VideoPlayerModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,11 +364,16 @@
 				E61687A52B70D20F000A709C /* FeedViewModel.swift in Sources */,
 				E6E0127F2B70D6CD00FC4607 /* Post.swift in Sources */,
 				E6D2C0DB2B6927C100410016 /* LoginPage.swift in Sources */,
+				E69752E52B7B654D00D40B0B /* VideoPlayerView.swift in Sources */,
 				E6D2C0E02B6930B500410016 /* CustomCorners.swift in Sources */,
 				E6D2C0DE2B69298500410016 /* LoginPageModel.swift in Sources */,
+				E69752E32B7B64E700D40B0B /* MiniPlayer.swift in Sources */,
+				E69752DF2B7B57E900D40B0B /* Video.swift in Sources */,
+				E61B86452B7B8347001C8CA2 /* VideoPlayerModel.swift in Sources */,
 				E61599EE2B70F9500008F007 /* CustomVideoPlayer.swift in Sources */,
 				E6D2C0AF2B679BB200410016 /* ContentView.swift in Sources */,
 				E6D2C0D92B68E23100410016 /* OnBoardingPage.swift in Sources */,
+				E69752E12B7B5C6600D40B0B /* BottomVideoComponent.swift in Sources */,
 				E6D2C0E22B6B851600410016 /* HomePage.swift in Sources */,
 				E6D2C0E72B6BBC2B00410016 /* Home.swift in Sources */,
 				E6D2C0AD2B679BB200410016 /* SwiftUIProjectApp.swift in Sources */,
