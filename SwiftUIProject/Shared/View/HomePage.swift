@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
-    @State var currentTab = Tab .News
+    @State var currentTab = Tab .Home
     init(){
         UITabBar.appearance().isHidden = true
     }

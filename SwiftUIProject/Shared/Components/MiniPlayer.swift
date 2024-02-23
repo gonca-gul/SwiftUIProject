@@ -33,7 +33,7 @@ struct MiniPlayer: View {
                               .font(Font.custom("Noto Sans", size: 24))
                               .foregroundColor(Color(red: 0.78, green: 0, blue: 0))
                         }.padding(.top,38)
-                            .padding(.bottom,20)
+                            .padding(.bottom,20.0)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                         VStack {
                             HStack {
@@ -171,30 +171,28 @@ struct MiniPlayer: View {
                     .background(Color(hex:"ffffff"))
                     .cornerRadius(10)
                     .padding(.horizontal)
-                    }.padding(.bottom,150)
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom,150)
                 }
                 .onAppear {
                     if !player.isMiniPlayer {
                         player.height = reader.frame(in: .global).height + 250
                     }
                 }
-                
             }
             .background(Color(red: 0.94, green: 0.94, blue: 0.96))
             .opacity(player.isMiniPlayer ? 0 : getOpacity())
             .frame(height:  player.isMiniPlayer ? 0 : nil)
         }.background(.white.opacity(0.9))
-        
             .shadow(color: .white.opacity(0), radius: 4.55, x: 0, y: 0)
             .overlay(
             Rectangle()
                 .stroke(Color.white, lineWidth: 0.5)
-
             )
             .overlay(
             Rectangle()
             .stroke(.black.opacity(0.3), lineWidth: 0.5)
-
             )
         .cornerRadius(5)
         .onTapGesture {
@@ -223,6 +221,7 @@ struct MiniPlayer: View {
     }
 }
 
+
 struct VideoControls : View {
     @EnvironmentObject var player: VideoPlayerModel
     
@@ -237,11 +236,17 @@ struct VideoControls : View {
                 Image("speakerSlash")
                 
             })
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {}, label: {
                 Image("pause")
                 
             })
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                withAnimation{
+                    player.isMiniPlayer.toggle()
+                    player.width = UIScreen.main.bounds.width
+                    player.offset = 0
+                }
+            }, label: {
                 Image("expandWide")
                 
             })
